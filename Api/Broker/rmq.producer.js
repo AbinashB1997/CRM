@@ -4,7 +4,7 @@ var amqp = require("amqplib/callback_api");
 var logger = require("../Logger/log");
 
 module.exports.rmqPublisher = function (message) {
-  amqp.connect(process.env.RMQ_URL, function (error0, connection) {
+  /*amqp.connect(process.env.RMQ_URL, function (error0, connection) {
     if (error0) {
       throw error0;
     }
@@ -29,5 +29,5 @@ module.exports.rmqPublisher = function (message) {
     setTimeout(function () {
       connection.close();
     }, 500);
-  });
+  });*/
 };
